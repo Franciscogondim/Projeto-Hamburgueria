@@ -254,9 +254,12 @@ body {
   position: relative;
   left: 45px;
   top: 35px;
-  color: #996520;
+  color: #F5B330;
   font-style: normal;
 }
+
+/* pagina "sobre" */
+
 .blocosobre {
   display: grid; 
   background-color: #F5B330;
