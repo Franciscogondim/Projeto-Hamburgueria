@@ -249,5 +249,38 @@ body {
   font-size: 1.7rem;
   font-style: italic;
   margin: 1rem;
-  
 }
+
+.logo-nova{
+   padding-top: 10px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  p
+}
+.container-ajuste{
+   height: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-nova{
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #ccc;
+  height: 34rem;
+  width: 32rem;
+  border-radius: 22px;
+  position: relative;
+  bottom: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
