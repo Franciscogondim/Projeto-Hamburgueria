@@ -97,7 +97,7 @@ body {
 
 .h {
   /*foto dos hambúrgueres*/
-  height: 200px;
+  height: 210px;
   border-radius: 40px;
 }
 
@@ -107,6 +107,7 @@ body {
 }
 
 dialog{
+    border: none;
     outline: none;
     padding: 0;
     border-radius: 25px;
@@ -114,11 +115,14 @@ dialog{
 }
 
 .abrirPopUp{
+    border: none;
     padding: 10px;
     outline: none;
     border-radius: 20px;
     cursor: pointer;
-}  
+}
+
+
 
 .container-popUp{
     background-color: #ccc;
@@ -138,6 +142,8 @@ dialog{
     margin-left: auto;
     padding-top: 13px;
     font-style: normal;
+    border: none;
+    font-size: 25px;
 }
 
 .descricao{
@@ -155,16 +161,17 @@ dialog{
 .opcoesCompra{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   gap: 15px;
   text-align: right;
   position: relative;
-  left: 290px;
-  bottom: 70px;
+  left: 235px;
+  bottom: 30px;
 }
 
 /*estiliza o botão em si*/
 .bot-popUp{
+  border: none;
   height: 39px;
   outline: none;
   border-radius: 15px;
@@ -172,11 +179,11 @@ dialog{
   cursor: pointer;
 }
 
-#addCarrinho{
+.addCarrinho{
   background: #f9a83e;
 }
 
-#comprarAgora{
+.comprarAgora{
   background: #996520;
 }
 
@@ -190,8 +197,8 @@ dialog{
   display: flex;
   flex-direction: column;
   margin-left: 25px;
-  width: 30%;
-  font-size: 20px;
+  width: 40%;
+  font-size: 29px;
   text-align: left;
 }
 
@@ -199,16 +206,33 @@ dialog{
   font-size: 20px;
 }
 
-.quantidade{
-  display: flex;
-  font-size: 20px;
-  margin-top: 15px;
-  margin-left: 25px;
-  font-style: normal;
-  width: 30%;
+#ajuste-fritas{
+  position: relative;
+  bottom: 40px;
 }
 
+#ajuste-cebola{
+  position: relative;
+  bottom: 37px;
+}
 
+#ajuste-ketchup{
+  font-size: 20px;
+}
+
+#ajuste-maionese{
+  position: relative;
+  bottom: 45px;
+}
+
+#ajuste-laranja{
+  position: relative;
+  bottom: 45px;
+}
+
+#ajuste-uva{
+  font-size: 20px;
+}
 
 /* página de login */
 .container-login {
