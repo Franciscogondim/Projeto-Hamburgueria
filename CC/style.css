@@ -12,7 +12,7 @@ body {
 }
   
 /*navbar*/
-.topo-site {
+.topo-site {  
   position: fixed;
   top: 0;
   left: 0;
@@ -79,57 +79,143 @@ body {
 }
 
 #titulo{
-  text-align: center;
-  font-size: 67px;
-  bottom: 60px;
+  text-align: left;
+  font-size: 60px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.divisoria{
+  position: relative;
+  bottom: 17px;
 }
 
 .container-main {  
-  position: relative;
-  height: 300px;
-  background: #F5B330;
-  margin-top: 20px;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  width: 100%;
-  max-width: 8000px;
-  overflow: hidden;   
+  display: grid;
+  grid-template-rows: 100px 100px 100px;;
 }
 
 .h {
   /*foto dos hambúrgueres*/
-  height: 300px;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
+  height: 200px;
+  border-radius: 40px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+dialog{
+    outline: none;
+    padding: 0;
+    border-radius: 25px;
+    z-index: 9999;
+}
+
+.abrirPopUp{
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}  
+
+.container-popUp{
+    background-color: #ccc;
+    height: 450px;
+        aspect-ratio: 3/2;
+    outline: none;
+    border-radius: 25px;
+}
+
+.botaoX{
+    display: flex;
+    outline: none;
+    background-color: transparent;
+    width: 36px;
+        aspect-ratio: 1;
+    cursor: pointer;
+    margin-left: auto;
+    padding-top: 13px;
+    font-style: normal;
 }
 
 .descricao{
-  font-size: 45px;
-  position: absolute;
-  left: 320px;
-  right: 290px;
-  top: 30px;
-  overflow: hidden;
+  padding: 0px 19px;
+  padding-top: 6px;
+  display: flex;
+  font-size: 28.2px;
+  margin-left: auto;
+  width: 100%;
+  gap: 18px;
+  text-align: left;
+}
+
+/*ajusta a posição dos botoes*/
+.opcoesCompra{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+  text-align: right;
+  position: relative;
+  left: 290px;
+  bottom: 70px;
+}
+
+/*estiliza o botão em si*/
+.bot-popUp{
+  height: 39px;
+  outline: none;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#addCarrinho{
+  background: #f9a83e;
+}
+
+#comprarAgora{
+  background: #996520;
+}
+
+#hamburguer-popUp{
+  display: flex;
+  justify-content: left;
 }
 
 .nome-valor{
   /*nome do hambúrguer e preços */
-  position: relative;
-  right: 30px;
-  bottom: 300px;
-  font-size: 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
-  color: maroon;
-  text-align: right;
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  width: 30%;
+  font-size: 20px;
+  text-align: left;
 }
+
+.preco{
+  font-size: 20px;
+}
+
+.quantidade{
+  display: flex;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 25px;
+  font-style: normal;
+  width: 30%;
+}
+
+
 
 /* página de login */
 .container-login {
   /* centraliza o login */
-  height: 50%;
+  height: calc(100vh - 300px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-style: normal;
@@ -246,41 +332,6 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* página de inicio */
-
-.inicio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-  
-.hamb {
-  display: flex;
-  height: 450px;
-  border-radius: 40px;
-  margin-left: 65px;
-  width: 350px;
-  position: relative;
-  right: 30px;
-}
-
-#titulo1 {
-  text-align: center;
-  font-size: 40px;
-  bottom: 60px;
-  margin-top: 10px;
-}
-
-#titulosiniciais {
-  display: flex;
-  font-size: 50px;
-  color: white;
-  margin-left: 135px;
-  margin-top: 20px;
-}
-
 
 /* rodape */
 .rodape{
