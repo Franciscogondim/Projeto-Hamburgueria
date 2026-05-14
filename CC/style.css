@@ -1,5 +1,5 @@
 
-* {
+*:not(dialog) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -128,7 +128,7 @@ body {
 /* página de login */
 .container-login {
   /* centraliza o login */
-  height: 50%; 
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,4 +279,70 @@ input[type=number]::-webkit-outer-spin-button {
   color: white;
   margin-left: 135px;
   margin-top: 20px;
+}
+
+
+/* rodape */
+.rodape{
+  background-color: black;
+  height: 350px;
+}
+
+.info{
+  color: #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#sobre{
+  color: #ccc;
+}
+
+.fa-whatsapp{
+  font-size: 36px;
+}
+
+.fa-instagram{
+  font-size: 36px;
+}
+
+.fa-facebook{
+  font-size: 36px;
+}
+
+.logos{
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+#logo{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.logo-rodape{
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-direitos{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.sobre-direitos p{
+  margin-top: 25px;
+}
+
+.espaco{
+  height: 50px;
 }
