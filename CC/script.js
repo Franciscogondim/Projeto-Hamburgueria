@@ -10,7 +10,6 @@ abrirPopUp.forEach(button => {
     });
 });
 
-// para fazer o pop-up fechar com o botão X
 const botaoX = document.querySelectorAll('.botaoX');
 
 botaoX.forEach(button => {
